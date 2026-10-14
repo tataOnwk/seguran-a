@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Jogo educativo de matemática para alunos do 6º ano.">
+  <title>Desafio Matemático - 6º ano</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="topo">
+    <div class="marca">⭐ Desafio Matemático</div>
+    <span class="serie">6º ano • Aprender brincando</span>
+  </header>
+
+  <main class="container">
+    <section id="inicio" class="painel tela">
+      <div class="emoji-grande" aria-hidden="true">🧠➕</div>
+      <p class="etiqueta">MISSÃO DO DIA</p>
+      <h1>Vamos treinar matemática?</h1>
+      <p class="descricao">Responda às perguntas, some pontos e descubra quantos desafios consegue vencer!</p>
+      <div class="detalhes">
+        <span>📚 10 perguntas</span>
+        <span>🏆 1 ponto por acerto</span>
+        <span>💡 Aprenda com o feedback</span>
+      </div>
+      <button id="btnComecar" class="botao principal">Começar o jogo 🚀</button>
+    </section>
+
+    <section id="jogo" class="painel tela escondida" aria-live="polite">
+      <div class="barra-info">
+        <span id="progresso">Pergunta 1 de 10</span>
+        <span class="pontos">⭐ Pontos: <strong id="pontuacao">0</strong></span>
+      </div>
+      <div class="trilho"><div id="barraProgresso" class="preenchimento"></div></div>
+      <p id="categoria" class="etiqueta">OPERAÇÕES</p>
+      <h2 id="pergunta">Pergunta aparece aqui</h2>
+      <div id="alternativas" class="alternativas"></div>
+      <p id="feedback" class="feedback" role="status"></p>
+      <button id="btnProxima" class="botao principal escondida">Próxima pergunta ➜</button>
+    </section>
+
+    <section id="fim" class="painel tela escondida" aria-live="polite">
+      <div class="emoji-grande" aria-hidden="true">🏆</div>
+      <p class="etiqueta">MISSÃO CONCLUÍDA</p>
+      <h1 id="tituloFinal">Muito bem!</h1>
+      <p id="mensagemFinal" class="descricao"></p>
+      <div class="placar-final"><span>Seu resultado</span><strong id="resultadoFinal">0/10</strong></div>
+      <button id="btnReiniciar" class="botao principal">Jogar novamente 🔄</button>
+    </section>
+  </main>
+  <footer><p>Feito para aprender brincando • Matemática do 6º ano</p></footer>
+</body>
+</html>
